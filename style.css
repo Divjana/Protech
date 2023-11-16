@@ -1,7 +1,124 @@
-.button {
-    cursor: pointer;
+:root {
+    --brown: #5B513E;
+    --light-brown: #837559;
+    --dark: #232323;
+    --white: #ffff;
 }
 
-.h1 {
-    color: aqua;
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  
+  body {
+    margin: 0;
+    font-family: 'IBM Plex Sans';
+
+  }
+  
+
+
+.arrow {
+    cursor: pointer;
+    width: 49px;
+    height: 49px;
+    border: 0;
+}
+
+
+
+.medium-head {
+    color: var(--light-brown);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.details {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+header {
+    background-color: #232323;
+}
+
+
+
+h1 {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 42px;
+}
+
+
+
+h1 span {
+    font-weight: 700;
+}
+
+
+
+.p1 {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
+h2 {
+    color: var(--light-brown);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+}
+
+
+
+h2 span {
+    font-weight: 700;
+}
+
+
+.paragraph {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+h3 {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 38px;
+}
+
+
+
+.demo2 {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+
+
+footer {
+    background-color: var(--brown);
+    color: var(--white);
 }
