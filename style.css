@@ -1,6 +1,6 @@
 :root {
-    --brown: #5B513E;
-    --light-brown: #837559;
+--brown: #5B513E;
+--light-brown: #837559;
     --dark: #232323;
     --white: #ffff;
 }
@@ -16,46 +16,111 @@
   body {
     margin: 0;
     font-family: 'IBM Plex Sans';
+    display: block;
 
+  }
+
+  main {
+    padding: 15px;
   }
   
 
 
-.arrow {
+button {
     cursor: pointer;
-    width: 49px;
-    height: 49px;
     border: 0;
 }
 
 
 
 .medium-head {
+    padding-top: 150px;
     color: var(--light-brown);
     font-size: 20px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    margin: 0;
 }
 
-
+.product {
+    position: relative;
+}
 
 .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 16px;
     font-weight: 200;
     line-height: normal;
     text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
+
+
+.details-text {
+    top: -90%;
+    left: -32%;
+    transform: rotate(-90deg);
+    position: absolute;
+    z-index: 2;
+    
+}
+
+
+
+.product-des {
+    z-index: 3;
+    position: absolute;
+}
+
+
+
+.logo-background {
+    width: 199px;
+    height: 50px;
+    transform: -1 0 0 1 199 0;
+    position: relative;
+}
+
+
+.logo {
+    width: 199px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 1;
+}
+
 
 
 
 header {
     background-color: #232323;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.demo1 {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
 }
 
 
-
 h1 {
+    margin: 0px;
+    padding-top: 250px;
     color: var(--white);
     font-size: 40px;
     font-weight: 200;
@@ -71,12 +136,41 @@ h1 span {
 
 
 .p1 {
+    margin: 0px;
     color: var(--white);
     font-size: 17px;
     font-weight: 300;
     line-height: normal;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
+
+
+input {
+    width: 378px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #BCBABA;
+    background:#232323;
+}
+
+
+
+button[type="submit"] {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white);
+    width: 378px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: #0E4EB0;
+    border: 1px solid var(--white);
+}
+
+    
 
 
 h2 {
@@ -111,6 +205,9 @@ h3 {
 
 
 
+
+
+
 .demo2 {
     background-color: var(--dark);
     color: var(--white);
@@ -122,3 +219,4 @@ footer {
     background-color: var(--brown);
     color: var(--white);
 }
+
