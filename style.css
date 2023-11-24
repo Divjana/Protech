@@ -17,7 +17,7 @@
   body {
     margin: 0;
     font-family: 'IBM Plex Sans';
-    display: block;
+    display: inline-block;
 
   }
 
@@ -35,15 +35,6 @@ button {
 
 
 
-.medium-head {
-    padding-top: 350px;
-    color: var(--light-brown);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    margin: 0;
-}
 
 
 
@@ -58,6 +49,7 @@ button {
 .paragraph {
     position: absolute;
 }
+
 
 .details {
     display: flex;
@@ -83,17 +75,28 @@ button {
 
 
 
+
+.medium-head1 {
+    padding-top: 350px;
+    color: var(--light-brown);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
 .paragraph .product {
-    
     z-index: 0;
-    
 }
 
 
 
 
 .paragraph {
-font-size: 17px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 24px;
 }
@@ -117,6 +120,12 @@ font-size: 17px;
     transform: translate(-50%, -50%);
     padding: 10px;
     z-index: 1;
+}
+
+
+
+.logo-all {
+    margin-left: -42px;
 }
 
 
@@ -193,7 +202,7 @@ button[type="submit"] {
 
 
 
-    
+
 .devider2 {
     height: 1px;
     background-image: linear-gradient(to right, var(--light-brown) 50%, var(--white) 50%);
@@ -222,25 +231,44 @@ h2 {
 
 
 .reviews {
-    padding: 20px;
-    margin-bottom: 250px;
+    padding: 20px 20px 120px 20px;
 }
+
+
 
 .review {
     position: relative;
+    padding: 45px 0px 0px 100px;
 }
 
 
 
-
-
-.picture {
+.picture-reviewer {
     height: 80px;
     width: 80px;
     border-radius: 9px;
-    background-color: var(--brown);
+    position: absolute;
+    top: 50px;
+    left: 0%;
 }
 
+
+
+.medium-head2 {
+    color: var(--light-brown);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
+.paragraph2 {
+    margin:0;
+    padding-top: 10px;
+}
 
 
 
@@ -270,39 +298,96 @@ h3 {
 
 
 
+
 footer {
     background-color: var(--brown);
     color: var(--white); 
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
 
 
 .logo-big {
-    padding: 35px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
+
 
 
 .info-row {
     display: flex;
-    flex:1;
+    flex-wrap: wrap;
+    
 }
 
 
 
 .info-component {
     display: flex;
+    flex-direction: column;
     position: relative;
-    gap: 20px;
     padding: 20px;
+    white-space: nowrap;
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: calc(33.33% - 100px);
+    
 }
 
 
 
 .small {
+    margin: 0;
+    padding-left: 30px;
     position: absolute;
-    top: 5%;
-    left: 12%;
+    top: 16px;
+    left: 20px;
 }
+
+
+
+@media screen and (max-width: 900px) {
+    .info-component {
+        flex: 0 0 calc(50% - 40px);
+        max-width: calc(50% - 40px);   
+    }
+    footer {
+        padding-bottom: 0px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .info-components {
+        position: relative;
+    }
+    .info-component {
+        flex: 0 0 calc(20%);
+        min-width: 80px;
+    }
+    .info-row {
+        position: absolute;
+        justify-content: flex-end;
+        position: relative;
+        top: 50%;
+        transform: translateY(25%);
+        align-items: end;
+        
+    }
+    .logo-big {
+        position: absolute;   
+    }
+
+    .user-input {
+        position: relative;
+        align-self: end;
+    }
+    h3 {
+        position: absolute;
+    }
+
+    .demo2 {
+        padding: 50px 60px 50px 20px;
+    }
+}
+
 
