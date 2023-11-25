@@ -141,9 +141,11 @@ header {
 
 .demo1 {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-direction: column;
 }
+
+
 
 
 h1 {
@@ -164,8 +166,6 @@ h1 {
     font-size: 17px;
     font-weight: 300;
     line-height: normal;
-    padding-bottom: 30px;
-    padding-top: 10px;
 }
 
 
@@ -177,6 +177,7 @@ input {
     border-radius: 9px;
     border: 1px solid #BCBABA;
     background:#232323;
+    margin-bottom: 20px;
 }
 
 
@@ -225,6 +226,7 @@ h2 {
     font-weight: 300;
     line-height: 38px;
     margin: 0px;
+    padding: 20px 20px 0px 20px;
 }
 
 
@@ -345,18 +347,21 @@ footer {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .info-component {
         flex: 0 0 calc(50% - 40px);
-        max-width: calc(50% - 40px);   
+        max-width: calc(50% - 40px);  
     }
     footer {
         padding-bottom: 0px;
     }
+
 }
 
 
-@media screen and (min-width: 900px) {
+
+
+@media screen and (min-width: 1050px) {
     .info-components {
         position: relative;
     }
@@ -371,23 +376,52 @@ footer {
         top: 50%;
         transform: translateY(25%);
         align-items: end;
-        
+        padding: 30px 50px 50px 50px;
     }
     .logo-big {
-        position: absolute;   
+        position: absolute;
+        top: 50px;   
+        left: 60px;
     }
-
-    .user-input {
+    .user-input2 {
         position: relative;
         align-self: end;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
     }
     h3 {
         position: absolute;
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 37px;
+        padding-left: 60px;
     }
 
     .demo2 {
-        padding: 50px 60px 50px 20px;
+        padding: 80px 80px 80px 60px;
     }
+    .demo1 {
+        padding: 85px;
+    }
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 60px 120px 60px;
+    }
+    .review {
+        flex: 0 0 33.33%;
+        padding: 195px 40px 0px 50px;
+        }
+        .picture-reviewer {
+            width: 125px;
+            height: 125px;
+            top: 50px;
+            left: 50px;
+        }
 }
 
 
