@@ -28,6 +28,25 @@
   
 
 
+.hero {
+    max-width: 100%; 
+    height: 640px; 
+    width: auto;
+    display: block;
+    position: relative;
+    margin: 0px;
+}
+
+
+
+.hero-components {
+    position: absolute;
+    padding: 20px
+}
+
+
+
+
 button {
     cursor: pointer;
     border: 0;
@@ -136,7 +155,6 @@ header {
     display: flex;
     text-align: left;
     flex-direction: column;
-    padding: 20px;
 }
 
 .demo1 {
@@ -181,6 +199,10 @@ input {
 }
 
 
+#email1, #email2 {
+    color: var(--white)
+  }
+
 
 button[type="submit"] {
     font-size: 17px;
@@ -193,6 +215,9 @@ button[type="submit"] {
     background-color: #0E4EB0;
     border: 1px solid var(--white);
 }
+
+
+
 
 
 
@@ -385,7 +410,7 @@ footer {
     }
     .user-input2 {
         position: relative;
-        align-self: end;
+        align-self: flex-end;
         height: 100px;
         display: flex;
         flex-direction: column;
