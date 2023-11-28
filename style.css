@@ -48,11 +48,15 @@ button {
 
 .product {
     position: relative;
+    
 }
 
 
 
-
+.details-text-flow,
+.details-text-oasis,
+.details-text-harmony,
+.details-text-flexbox,
 .details-text,
 .details,
 .paragraph {
@@ -78,7 +82,10 @@ button {
 
 
 
-
+.details-text-flow,
+.details-text-oasis,
+.details-text-harmony,
+.details-text-flexbox,
 .details-text {
     z-index: 2;
     transform: rotate(-90deg);
@@ -90,7 +97,7 @@ button {
 
 
 .medium-head1 {
-    padding-top: 350px;
+    padding-top: 0px;
     color: var(--light-brown);
     font-size: 20px;
     font-weight: 600;
@@ -513,3 +520,29 @@ footer {
 
 
 
+.product-image {
+    width: 389px;
+    height: 268px;
+}
+
+
+.product-slide-flex,
+.product-slide-flow,
+.product-slide-harmony,
+.product-slide-oasis {
+    margin-top: 86px;
+    margin-bottom: 86px;
+    display: none;
+}
+
+ .product-image {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: var(--beige);
+    border-radius: 9px; 
+}
+
+#harmonyVideo {
+    transform: scaleX(-1);
+}
