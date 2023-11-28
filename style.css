@@ -59,10 +59,14 @@ button {
 
 .product {
     position: relative;
+    padding: 10px;
 }
 
 
-
+.details-text-flow,
+.details-text-oasis,
+.details-text-harmony,
+.details-text-flexbox,
 .details-text,
 .details,
 .paragraph {
@@ -84,7 +88,10 @@ button {
     
 }
 
-
+.details-text-flow,
+.details-text-oasis,
+.details-text-harmony,
+.details-text-flexbox,
 .details-text {
     z-index: 2;
     transform: rotate(-90deg);
@@ -96,7 +103,7 @@ button {
 
 
 .medium-head1 {
-    padding-top: 350px;
+    padding-top: 0px;
     color: var(--light-brown);
     font-size: 20px;
     font-weight: 600;
@@ -449,4 +456,21 @@ footer {
         }
 }
 
+.product-image-smartflexbloom,
+.product-image-smartflexfrost,
+.product-image {
+    width: 389px;
+    height: 268px;
+}
+.product-image-smartflexfrost {
+    transform: scaleX(-1)
+}
 
+.product-slide-flex,
+.product-slide-flow,
+.product-slide-harmony,
+.product-slide-oasis {
+    margin-top: 86px;
+    margin-bottom: 86px;
+    display: none;
+}
