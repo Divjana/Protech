@@ -1,28 +1,21 @@
-/* Image cycle */
+/* video */
 
-var currentImageIndex = 0;
-var imagePaths = ["./images/fold.png", "./images/unfold.png"];
+function toggleVideo(videoId) {
+  var clickedVideo = document.getElementById(videoId);
 
-var hasHovered = false;
 
-function startImageCycle() {
-  if (!hasHovered) {
-    hasHovered = true;
-    changePicture();
-  }
-}
+  var allVideos = document.querySelectorAll('video');
+  allVideos.forEach(function(video) {
+    if (video !== clickedVideo) {
+      video.pause();
+    }
+  });
 
-function changePicture() {
-  var image = document.getElementById("myImage");
-
-  currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
-
-  image.src = imagePaths[currentImageIndex];
-
-  if (currentImageIndex < imagePaths.length - 1) {
-    setTimeout(changePicture, 2000);
+  
+  if (clickedVideo.paused) {
+    clickedVideo.play();
   } else {
-    hasHovered = false;
+    clickedVideo.pause();
   }
 }
 
