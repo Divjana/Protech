@@ -30,5 +30,5 @@ function showFlexSlides(n) {
     slides[i].style.display = "none";
   }
 
-  slides[flexboxSlideIndex].style.display = "block";
+  slides[flexSlideIndex].style.display = "block";
 }
