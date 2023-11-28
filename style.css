@@ -59,7 +59,7 @@ button {
 
 .product {
     position: relative;
-    padding: 10px;
+    
 }
 
 
@@ -456,15 +456,12 @@ footer {
         }
 }
 
-.product-image-smartflexbloom,
-.product-image-smartflexfrost,
+
 .product-image {
     width: 389px;
     height: 268px;
 }
-.product-image-smartflexfrost {
-    transform: scaleX(-1)
-}
+
 
 .product-slide-flex,
 .product-slide-flow,
@@ -473,4 +470,16 @@ footer {
     margin-top: 86px;
     margin-bottom: 86px;
     display: none;
+}
+
+ .product-image {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: var(--beige);
+    border-radius: 9px; 
+}
+
+#harmonyVideo {
+    transform: scaleX(-1);
 }
