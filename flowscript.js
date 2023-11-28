@@ -1,3 +1,9 @@
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+
 let flowSlideIndex = 0;
 showFlowSlides(flowSlideIndex);
 
@@ -31,4 +37,5 @@ function showFlowSlides(n) {
   }
 
   slides[flowSlideIndex].style.display = "block";
+}
 }
