@@ -612,6 +612,17 @@ footer {
 }
 
 
+@media screen and (max-width: 420px) {
+    .language {
+        left: 330px !important;
+
+    }
+    .language-paragraph{
+        left: 341px !important;
+
+    }
+}
+
 
 .product-image {
     width: 389px;
