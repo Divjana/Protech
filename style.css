@@ -579,7 +579,7 @@ footer {
     .demo2, .info-company, footer {
         height: 240px;
     }
-    .zoom-picture {
+    .product-image {
         background: linear-gradient(to top, rgb(107, 106, 106) 40%, black 100%);
     }
 }
