@@ -427,6 +427,12 @@ footer {
 
 
 
+#harmonyVideo {
+    transform: scaleX(-1);
+}
+
+
+
 @media screen and (max-width: 800px) {
     .info-component {
         flex: 0 0 calc(50% - 40px);
@@ -584,10 +590,6 @@ footer {
 }
 
 
-#harmonyVideo {
-    transform: scaleX(-1);
-}
-
 
 @media screen and (min-width: 800px) {
     .details,
@@ -606,9 +608,6 @@ footer {
     .product-image {
         width: 361px;
         height: 269px;
-        border: 3px solid;
-        border-color: var(--beige);
-        border-radius: 9px; 
     }
     #flowVideo,
     #flexVideo,
@@ -634,10 +633,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-.product-image {
-    width: 389px;
-    height: 268px;
-}
 
 #flowVideo,
     #flexVideo,
@@ -659,10 +654,10 @@ footer {
     z-index: 1;
 }
  .product-image {
+    width: 389px;
+    height: 268px;
     position: relative;
     overflow: hidden;
-    border: 3px solid;
-    border-color: var(--beige);
     border-radius: 9px; 
 }
 

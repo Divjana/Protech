@@ -41,3 +41,35 @@ mySubmitButton2.addEventListener("click", function (event) {
   mySubmitButton2.style.color = "black";
   emailInput2.value = "";
 });
+
+/* zoomed images */
+
+function setupZoomEffect(zoomPicture, zoomedImage) {
+  zoomPicture.style.width = '361px';
+  zoomPicture.style.height = '269px';
+  zoomPicture.style.borderRadius = '9px';
+  zoomPicture.style.border = '5px solid var(--light-brown)';
+  zoomPicture.style.overflow = 'hidden';
+  zoomedImage.style.width = '100%';
+  zoomedImage.style.height = '100%';
+  zoomedImage.style.display = 'block';
+  zoomedImage.style.transition = 'transform 0.3s ease';
+
+  zoomPicture.addEventListener('mousemove', (e) => {
+    const rect = zoomedImage.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width * 100;
+    const y = (e.clientY - rect.top) / rect.height * 100;
+    zoomedImage.style.transformOrigin = `${x}% ${y}%`;
+    zoomedImage.style.transform = 'scale(2)';
+  });
+
+  zoomPicture.addEventListener('mouseleave', () => {
+    zoomedImage.style.transform = 'scale(1)';
+  });
+}
+
+const zoomPictures = document.querySelectorAll('.zoom-picture');
+zoomPictures.forEach((zoomPicture) => {
+  const zoomedImage = zoomPicture.querySelector('.product-image');
+  setupZoomEffect(zoomPicture, zoomedImage);
+});
