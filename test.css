@@ -1,0 +1,56 @@
+.product-background {
+    height: 400px;
+    width: 100%;
+    background-color: #232323;
+    border-radius: 15px; /* Apply border radius as per your design */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .product-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .image-column {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-end; /* Align to the right side of the screen */
+    width: 50%; /* Take 50% width of the screen */
+    height: 100%; /* Occupy the entire height */
+    padding-right: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .image-column {
+      width: 100%; /* On smaller screens, take up the full width */
+      padding: 20px; /* Adjust padding for smaller screens */
+      align-items: flex-start; /* Align to the top */
+    }
+  }
+  
+  video {
+    width: 100%; /* Occupy full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .paragraph {
+    width: 50%; /* Take 50% width */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .paragraph {
+      width: 100%; /* On smaller screens, take up full width */
+    }
+  }
+  
