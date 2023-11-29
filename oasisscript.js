@@ -1,9 +1,3 @@
-function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-if (isMobile()) {
-
 let oasisSlideIndex = 0;
 showOasisSlides(oasisSlideIndex);
 
@@ -37,6 +31,4 @@ function showOasisSlides(n) {
   }
 
   slides[oasisSlideIndex].style.display = "block";
-}
-
 }
