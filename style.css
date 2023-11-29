@@ -4,6 +4,7 @@
     --dark: #232323;
     --white: #ffff;
     --beige: #D9D3C7;
+    --light-beige: #F1EEEA;
 }
 
 
@@ -189,6 +190,7 @@ header {
     display: flex;
     text-align: left;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -425,7 +427,9 @@ footer {
 }
 
 
-
+.background-svg {
+    display: none;
+}
 
 #harmonyVideo {
     transform: scaleX(-1);
@@ -576,7 +580,6 @@ footer {
         height: 240px;
     }
 }
-
 
 @media screen and (max-width: 420px) {
     .language {

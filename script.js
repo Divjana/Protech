@@ -1,21 +1,24 @@
 /* video */
 
 function toggleVideo(videoId) {
-  const clickedVideo = document.getElementById(videoId);
+  const hoveredVideo = document.getElementById(videoId);
 
-  const allVideos = document.querySelectorAll("video");
-  allVideos.forEach(function (video) {
-    if (video !== clickedVideo) {
-      video.pause();
-    }
+  hoveredVideo.addEventListener('mouseover', function() {
+    this.play(); // Start playing the video on hover
   });
 
-  if (clickedVideo.paused) {
-    clickedVideo.play();
-  } else {
-    clickedVideo.pause();
-  }
+  hoveredVideo.addEventListener('mouseleave', function() {
+    this.pause(); // Pause the video when mouse leaves
+    this.currentTime = 0; // Reset the video to the beginning
+  });
 }
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  setTimeout(function() {
+    document.body.focus(); // Focus on the body element after a short delay
+  }, 100); // Adjust the delay time as needed
+});
+
 
 /* Button click */
 const mySubmitButton1 = document.querySelector("#myButton1");
