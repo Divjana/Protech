@@ -4,21 +4,14 @@ function toggleVideo(videoId) {
   const hoveredVideo = document.getElementById(videoId);
 
   hoveredVideo.addEventListener('mouseover', function() {
-    this.play(); // Start playing the video on hover
+    this.play(); 
   });
 
   hoveredVideo.addEventListener('mouseleave', function() {
-    this.pause(); // Pause the video when mouse leaves
-    this.currentTime = 0; // Reset the video to the beginning
+    this.pause(); 
+    this.currentTime = 0; 
   });
 }
-
-window.addEventListener('DOMContentLoaded', (event) => {
-  setTimeout(function() {
-    document.body.focus(); // Focus on the body element after a short delay
-  }, 100); // Adjust the delay time as needed
-});
-
 
 /* Button click */
 const mySubmitButton1 = document.querySelector("#myButton1");
