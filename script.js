@@ -13,13 +13,6 @@ function toggleVideo(videoId) {
   });
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  setTimeout(function() {
-    document.body.focus(); // Focus on the body element after a short delay
-  }, 100); // Adjust the delay time as needed
-});
-
-
 /* Button click */
 const mySubmitButton1 = document.querySelector("#myButton1");
 const emailInput1 = document.querySelector("#email1");
