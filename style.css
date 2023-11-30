@@ -205,7 +205,6 @@ button[type="submit"] {
     var(--white) 50%
   );
   background-size: 4px 4px;
-  margin-top: 180px;
 }
 
 span {
