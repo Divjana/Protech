@@ -612,10 +612,10 @@ footer {
 
 @media screen and (max-width: 420px) {
   .language {
-    left: 330px !important;
+    right: 330px !important;
   }
   .language-paragraph {
-    left: 341px !important;
+    right: 341px !important;
   }
 }
 
@@ -667,6 +667,7 @@ footer {
     display: block;
     width: 389px;
     height: 268px;
+    object-fit: cover; 
   }
   #flowVideo,
   #flexVideo,
