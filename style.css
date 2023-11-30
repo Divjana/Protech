@@ -172,6 +172,7 @@ input {
   border: 1px solid #bcbaba;
   background: #232323;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 #email1,
@@ -323,6 +324,15 @@ footer {
 #harmonyVideo {
   transform: scaleX(-1);
 }
+
+
+#flowVideo,
+  #flexVideo,
+  #harmonyVideo,
+  #oasisVideo {
+    display: none;
+  }
+
 
 @media screen and (max-width: 800px) {
   .info-component {
@@ -633,6 +643,7 @@ footer {
   #oasisVideo {
     width: 829px;
     height: 616px;
+    display: flex;
   }
 
   .product-container {
@@ -653,6 +664,7 @@ footer {
 
 @media screen and (max-width: 1150px) {
   .mobile-img {
+    display: block;
     width: 389px;
     height: 268px;
   }
@@ -663,6 +675,11 @@ footer {
     display: none;
   }
 
+  .video {
+    display: none;
+  }
+
+  
   .product-slide-flex,
   .product-slide-flow,
   .product-slide-harmony,
@@ -736,4 +753,5 @@ footer {
     top: -90%;
     left: -35%;
   }
-
+}
+}
